@@ -203,7 +203,7 @@ private val resultLauncher = registerForActivityResult(ActivityResultContracts.S
 | authCode | 使用者同意授權後獲得，用於後續 Server 端換取 access token。| 
 | scopesUserGranted | 使用者同意之授權項目。| 
 | jkosUserId | 若使用者同意之授權項目中，已將街口 User Id 與開發者 User Id 進行連結，此為回傳成功連接之街口 User Id。 |
-| errorMessage | 若使用者同意之授權項目中，已將街口 User Id 與開發者 User Id 進行連結，此為回傳成功連接之開發者 User Id。|
+| isvUserId | 若使用者同意之授權項目中，已將街口 User Id 與開發者 User Id 進行連結，此為回傳成功連接之開發者 User Id。|
 
 ### onError
 | Name | Description | 
