@@ -192,7 +192,7 @@ private val resultLauncher = registerForActivityResult(ActivityResultContracts.S
 | Name | Description | 
 | --- | --- |
 | binding | 用戶同意是否允許第三方平台用戶與街口用戶的建立關聯，獲得授權綁定關係後，後續部分業務行為會進行綁定關係的驗證。若欲申請此項 SCOPE 需於 `input params` 中輸入參數 `isvUserId` 。| 
-| pointtransmit | 開發者欲申請之授權項目。授權項目詳情見下方`SCOPE` 列表。| 
+| pointtransmit | 用戶同意從第三方帳戶補儲值至個別用戶的街口帳戶，於補儲值的過程中，會驗證用戶綁定狀態、資金方帳戶、收款方狀態等業務邏輯。| 
 
 
 ## JkoLoginClient.OnJkoLoginCallbackListener
