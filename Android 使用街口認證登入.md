@@ -25,7 +25,7 @@ dependencies {
 
 ```xml
 <string name="jkos_client_id">[CLIENT_ID]</string> 
-<string name="jkos_oauth_login_scheme">jk[CLIENT_ID]</string>
+<string name="jkos_oauth_login_scheme">jkos[CLIENT_ID]</string>
 ```
 
 您必須將字串元素的 ID（name） `jkos_client_id` and `jkos_oauth_login_scheme` 設定與上述設定完全一至，因為 SDK 直接使用了相同的 ID。
