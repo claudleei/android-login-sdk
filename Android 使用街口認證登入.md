@@ -25,7 +25,7 @@ dependencies {
 
 ```xml
 <string name="jkos_client_id">[CLIENT_ID]</string> 
-<string name="jkos_oauth_login_scheme">jkos[CLIENT_ID]</string>
+<string name="jkos_scheme">jkos[CLIENT_ID]</string>
 ```
 
 您必須將字串元素的 ID（name） `jkos_client_id` and `jkos_oauth_login_scheme` 設定與上述設定完全一至，因為 SDK 直接使用了相同的 ID。
@@ -40,7 +40,7 @@ dependencies {
     android:value="@string/jkos_client_id"/> 
 <meta-data 
     android:name="com.jkos.sdk.login.sdk.Scheme" 
-    android:value="@string/jkos_oauth_login_scheme"/> 
+    android:value="@string/jkos_scheme"/> 
 ```
 
 # 3. 使用 JkoLoginClient
@@ -226,8 +226,8 @@ private val resultLauncher = registerForActivityResult(ActivityResultContracts.S
 | errorCode | Description | 
 | --- | --- |
 | 3_AL_1200 | 無法取得 meta data。| 
-| 3_AL_1201 | meta data `Schema` 不可為 null 或空。| 
-| 3_AL_1202 | meta data `ClientId` 不可為 null 或空。。 |
+| 3_AL_1201 | meta data `Scheme` 不可為 null 或空。| 
+| 3_AL_1202 | meta data `ClientId` 不可為 null 或空。 |
 | 3_AL_1203 | 使用者的街口 app 版本過低導致無法使用此服務。|
 | 3_AL_1204 | 開發者的 JKO Auth Login SDK 版本過低導致無法使用此服務。 |
 
