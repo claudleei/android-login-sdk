@@ -235,9 +235,10 @@ private val resultLauncher = registerForActivityResult(ActivityResultContracts.S
 ### AUTHORIZATION_ERROR
 | errorCode | Description | 
 | --- | --- |
-| 206 | 無效的 `ClientId`。| 
+| 206 | 無效的 `clientId`。| 
 | 207 | 無效的 `scopesApply`。| 
 | 208 | 該開發者並無申請之 `scopesApply` 使用權限。|
+| 209 | 無效的 `isv_user_id`|
 
 # 可選設定
 
