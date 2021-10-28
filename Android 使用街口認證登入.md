@@ -100,10 +100,10 @@ override fun onCreate(savedInstanceState: Bundle?) {
     })
 
     // Step 2. get the specific intent when you want to start JKO Auth Login Service
-    findViewById<Button>(R.id.button_login)findViewById<Button>(R.id.button_login).setOnClickListener { view ->
+    findViewById<Button>(R.id.button_login).setOnClickListener { view ->
         val intent = jkoLoginClient.getJkoLoginIntent(
                 context = view.context,
-                scopesApply = listOf("binding", "pointtransmit"),
+                scopesApply = listOf("binding", "pointTransmit"),
                 isvUserId = "developer_user_id"
             )
         startActivityForResult(intent, REQUEST_CODE)
@@ -161,7 +161,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
     findViewById<Button>(R.id.button_login).setOnClickListener { view ->
         val intent = jkoLoginClient.getJkoLoginIntent(
                 context = view.context,
-                scopesApply = listOf("binding", "pointtransmit"),
+                scopesApply = listOf("binding", "pointTransmit"),
                 isvUserId = "developer_user_id"
             )
         resultLauncher.launch(intent)
